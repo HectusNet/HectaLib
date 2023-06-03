@@ -1,9 +1,19 @@
+### Compiled class file ###
+*.class
+
+### Logs ###
+*.log
+
+### Package Files ###
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
 ### Build System ###
-.gradle
-build/
-gradle/wrapper/gradle-wrapper.jar
-**/src/main/**/build/
-**/src/test/**/build/
+target/
 
 ### IntelliJ IDEA ###
 .idea/
@@ -13,6 +23,3 @@ gradle/wrapper/gradle-wrapper.jar
 out/
 **/src/main/**/out/
 **/src/test/**/out/
-
-### Testing ###
-**/src/main/java/pg/
