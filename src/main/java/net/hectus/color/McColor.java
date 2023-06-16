@@ -1,10 +1,12 @@
-package net.hectus.util.var;
+package net.hectus.color;
 
-import java.awt.*;
+import java.awt.Color;
 
 /**
- * Minecraft Colors <br>
+ * <a href="https://minecraft.net/">Minecraft</a> Colors <br>
  * From the <a href="https://minecraft.fandom.com/wiki/Formatting_codes#Usage">Formatting Codes article</a> on the <a href="https://minecraft.fandom.com/wiki">Minecraft Wiki</a>
+ * @since 0.0.2-Pre-Alpha
+ * @author MarcPG1905
  */
 @SuppressWarnings("unused")
 public enum McColor {
@@ -42,13 +44,13 @@ public enum McColor {
     /** Lapislazuli Color */ MATERIAL_LAPIS('t', "21497B", false, true, null),
     /** Amethyst Color */ MATERIAL_AMETHYST('u', "9A5CC6", false, true, null);
 
-    /** The Minecraft color code */
+    /** The <a href="https://minecraft.net/">Minecraft</a> color code */
     public final char code;
     /** The color's hexadecimal code */
     public final String hex;
-    /** If the color can be used in Minecraft: Java Edition */
+    /** If the color can be used in <a href="https://www.minecraft.net/store/minecraft-java-bedrock-edition-pc">Minecraft: Java Edition</a> */
     public final boolean java;
-    /** If the color can be used in Minecraft: Bedrock Edition */
+    /** If the color can be used in <a href="https://www.minecraft.net/store/minecraft-java-bedrock-edition-pc">Minecraft: Bedrock Edition</a> */
     public final boolean bedrock;
     /** The ANSI escape code */
     public final Integer ansiCode;
@@ -62,8 +64,8 @@ public enum McColor {
     }
 
     /**
-     * Get the color as a Minecraft chat color.
-     * Similar to Bukkit/BungeeCord's ChatColor
+     * Get the color as a <a href="https://minecraft.net/">Minecraft</a> chat color.
+     * Similar to <a href="https://bukkit.org/">Bukkit</a>/<a href="https://www.spigotmc.org/wiki/bungeecord/">BungeeCord</a>'s ChatColor
      * @return § + the code, so you can use it in text.
      */
     public String chatColor() {
@@ -71,9 +73,8 @@ public enum McColor {
     }
 
     /**
-     * Get the color's equivalent Java AWT color.
-     * @return Equivalent Java AWT color
-     * @see Color
+     * Get the color's equivalent {@link Color Java AWT color}.
+     * @return Equivalent {@link Color Java AWT color}
      */
     public Color awtColor() {
         return Color.decode("#" + hex);
@@ -83,7 +84,23 @@ public enum McColor {
      * Get the color's equivalent ANSI escape code.
      * @return Equivalent ANSI escape code
      */
-    public Color ansi() {
-        return Color.decode("\\e[0;" + ansiCode + "m");
+    public String ansi() {
+        return "\\e[0;" + ansiCode + "m";
+    }
+
+    /**
+     * Get the color's equivalent console ANSI escape code that can be used to format the console.
+     * @return Equivalent console ANSI escape code
+     */
+    public String consoleAnsi() {
+        return "\u001B[" + ansiCode + "m";
+    }
+
+    /**
+     * Does the same as {@link #chatColor()}, just there so you can just use {@link McColor}.COLOR without the {@link #chatColor()}
+     * @return § + the code, so you can use it in text.
+     */
+    public String toString() {
+        return chatColor();
     }
 }

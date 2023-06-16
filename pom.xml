@@ -6,7 +6,7 @@
 
     <groupId>net.hectus</groupId>
     <artifactId>HectaLib</artifactId>
-    <version>0.0.1-ALPHA</version>
+    <version>0.0.2-PRE-ALPHA</version>
     <packaging>jar</packaging>
 
     <name>HectaLib</name>
@@ -31,10 +31,16 @@
     <developers>
         <developer>
             <name>Marc Griepenkerl</name>
-            <email>marcgriepenkerl8@gmail.com</email>
+            <email>founder@hectus.net</email>
             <organization>Hectus</organization>
             <organizationUrl>http://www.hectus.net</organizationUrl>
             <url>https://github.com/MarcPG1905</url>
+            <roles>
+                <role>Owner</role>
+                <role>Founder</role>
+                <role>Maintainer</role>
+            </roles>
+            <timezone>GMT+1 / EST / Berlin</timezone>
         </developer>
     </developers>
 

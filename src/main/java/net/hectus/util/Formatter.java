@@ -3,14 +3,15 @@ package net.hectus.util;
 /**
  * Used to format text.
  * @since 0.0.1-Pre-Alpha
+ * @author MarcPG1905
  */
 @SuppressWarnings("unused")
 public class Formatter {
     /**
-     * Convert a string in "TEST_STRING" format to pascal case: "Test String".
+     * Convert a {@link String string} in "TEST_STRING" format to pascal case: "Test String".
      *
-     * @param in The string that should be converted.
-     * @return The string formatted to pascal case.
+     * @param in The {@link String string} that should be converted.
+     * @return The {@link String string} but formatted to pascal case.
      *         For example, "FORTNITE_FEET" becomes "Fortnite Feet".
      * @since 0.0.1-Pre-Alpha
      */
