@@ -11,14 +11,5 @@ Using the Library with its API features that use our [API services](https://api.
 
 To use the library in Maven, you have to add this to your pom.xml file:
 ```xml
-<repository>
-    <id>hectalib</id>
-    <url>http://hectus.net/hectalib/repo/</url>
-</repository>
-
-<dependency>
-    <groupId>net.hectus</groupId>
-    <artifactId>hectalib</artifactId>
-    <version>0.0.1-ALPHA</version>
-</dependency>
+SOON!
 ```
