@@ -1,4 +1,4 @@
-package net.hectus.time;
+package net.hectus.data.time;
 
 /**
  * @since 0.0.2-Pre-Alpha
