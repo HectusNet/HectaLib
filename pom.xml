@@ -6,7 +6,7 @@
 
     <groupId>net.hectus</groupId>
     <artifactId>HectaLib</artifactId>
-    <version>0.0.4-PRE-ALPHA</version>
+    <version>0.0.5-PRE-ALPHA</version>
     <packaging>jar</packaging>
 
     <name>HectaLib</name>
@@ -49,17 +49,6 @@
         <developerConnection>scm:git:ssh://github.com:MarcPG1905/HectaLib.git</developerConnection>
         <url>http://github.com/MarcPG1905/HectaLib</url>
     </scm>
-
-    <distributionManagement>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
-        <repository>
-            <id>ossrh</id>
-            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-        </repository>
-    </distributionManagement>
 
 
     <build>
@@ -108,23 +97,6 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-gpg-plugin</artifactId>
-                <version>1.5</version>
-                <executions>
-                    <execution>
-                        <id>sign-artifacts</id>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>sign</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <executable>gpg</executable>
-                </configuration>
             </plugin>
         </plugins>
     </build>

@@ -1,5 +1,7 @@
 package net.hectus.storing.pair;
 
+import java.util.logging.Logger;
+
 /**
  * A pair is just two values that have a defined type.
  * It's the same as a {@link java.util.Map}, but with only one value.
