@@ -1,5 +1,8 @@
 package net.hectus.data.time;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
 /**
  * Time is used to convert and store times with different {@link Unit}s, etc.
  * @since 0.0.1-Pre-Alpha

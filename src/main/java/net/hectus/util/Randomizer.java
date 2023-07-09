@@ -48,11 +48,11 @@ public class Randomizer {
      * Returns a random {@link Object object} from the given {@link Collection collection}.
      *
      * @param in The {@link Collection collection} from which a random {@link Object object} should be selected.
-     * @return A random {@link Object object} from the input {@link Collection collection}.
+     * @return A random {@link T thing} from the input {@link Collection collection}.
      * @since 0.0.1-Pre-Alpha
      */
-    public static Object fromCollection(Collection<?> in) {
-        List<Object> objectList = new ArrayList<>(in);
+    public static <T> T fromCollection(Collection<T> in) {
+        List<T> objectList = new ArrayList<>(in);
         return objectList.get(random.nextInt(objectList.size()));
     }
 
@@ -63,7 +63,7 @@ public class Randomizer {
      * @return A random {@link Object object} from the input array.
      * @since 0.0.1-Pre-Alpha
      */
-    public static Object fromArray(Object[] in) {
+    public static <T> T fromArray(T[] in) {
         return in[random.nextInt(in.length)];
     }
 
